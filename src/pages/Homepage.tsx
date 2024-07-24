@@ -9,7 +9,7 @@ const Homepage = () => {
       <HomepageHeader />
 
       {/* WHY CHOOSE US */}
-      <section className=" mx-auto my-20 text-center bg-blue py-20">
+      <section className=" mx-auto mt-20 text-center bg-blue py-20">
         <h1 className="text-4xl font-bold leading-normal text-white">
           Why Choose Us?
         </h1>
@@ -66,13 +66,27 @@ const Homepage = () => {
       </section>
 
       {/* WHY SHOULD I ENROLL */}
-      <section className="w-11/12 mx-auto flex justify-between gap-5">
-        <aside className="w-1/2 bg-blue">a</aside>
-        <aside className="w-1/2 bg-red">
-          <div className="h-96 w-11/12 rounded-2xl">
-            <img src="src\assets\enroll-section.jpeg" alt="Aptech Computer Education" className="h-full w-full object-cover object-center" />
-          </div>
-        </aside>
+      <section className="flex gap-5 bg-yellow py-20">
+        <div className="w-11/12 mx-auto flex flex-wrap justify-between items-center">
+          <aside className="w-full md:w-1/2 lg:py-16 lg:px-8">
+            <h1 className="text-3xl md:text-4xl  font-semibold">
+              Why should I enroll?
+            </h1>
+            <p className="mt-4 ">
+              A career in programming is actually possible whether you are old
+              or young, male or female and one of the very best reasons to
+              become a computer programmer is the bounty of jobs out there. And
+              because we are an increasingly technologically reliant society it
+              is also apparent that there will be jobs in the programming sector
+              for a long time to come. As other industries decline and cease to
+              be, programming is growing and expanding into almost all areas of
+              life.
+            </p>
+          </aside>
+          <aside className="w-full md:w-1/2 h-96 mt-10">
+            <div className="h-full rounded-2xl bg-[url('src/assets/enroll-section.jpeg')] bg-cover bg-center"></div>
+          </aside>
+        </div>
       </section>
     </>
   );

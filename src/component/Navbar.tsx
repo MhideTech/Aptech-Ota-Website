@@ -7,7 +7,12 @@ const Navbar = () => {
       <div className="w-11/12 mx-auto flex justify-between items-center px-5">
         <ul className="flex gap-4">
           <li>
-            <NavLink to="/">Home</NavLink>
+            <NavLink
+              to="/"
+              className="hover:underline hover:underline-offset-4"
+            >
+              Home
+            </NavLink>
           </li>
           <li>
             <NavLink to="/about">About</NavLink>
@@ -27,7 +32,9 @@ const Navbar = () => {
           alt="Aptech Logo"
           className="w-36 absolute left-1/2 -translate-x-1/2"
         />
-        <Button to="/contact" variant="primary">Enroll Now</Button>
+        <Button to="/contact" variant="primary">
+          Enroll Now
+        </Button>
       </div>
     </nav>
   );

@@ -12,7 +12,7 @@ const Button: React.FC<ButtonProps> = ({
   variant = "primary",
 }) => {
   const baseStyles =
-    "py-3 px-5 border transition-all ease-in duration-300";
+    "py-3 px-5 border transition-all ease-in duration-300 inline-flex";
 
   const variantStyles = {
     primary: "bg-blue text-white hover:bg-none hover:border-blue hover:text-blue",

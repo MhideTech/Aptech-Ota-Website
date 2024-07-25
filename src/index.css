@@ -1,8 +1,33 @@
-@import url('https://fonts.googleapis.com/css2?family=Andika:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Andika:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-.active{
-    color: #AD1E22;
+.active {
+  color: #ad1e22;
+}
+
+/* Custom styles for react-responsive-carousel indicators */
+.carousel .control-dots {
+  position: absolute;
+  bottom: -30px; /* Adjust as needed to place the dots right under the carousel */
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  gap: 10px; /* Space between dots */
+}
+
+.carousel .control-dots .dot {
+  background: #000; /* Dot color */
+  box-shadow: none; /* Remove the shadow */
+  width: 5px; /* Adjust the size of the dots */
+  height: 5px; /* Adjust the size of the dots */
+}
+
+.carousel .control-dots .dot.selected,
+.carousel .control-dots .dot:hover {
+  background: #ff0000; /* Active and hover dot color */
+  box-shadow: none; /* Remove the shadow on active and hover */
+  transform: scale(1.2); /* Slightly enlarge the dot on active and hover */
 }
